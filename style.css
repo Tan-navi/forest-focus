@@ -1,0 +1,151 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#eef5eb;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    color:#2f3d2e;
+}
+
+.container{
+    width:90%;
+    max-width:500px;
+    background:#ffffff;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+h1{
+    text-align:center;
+    color:#355e3b;
+    margin-bottom:8px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#6b7b68;
+    margin-bottom:25px;
+}
+
+.input-section{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+input{
+    flex:1;
+    padding:12px;
+    border:2px solid #c8d9c3;
+    border-radius:10px;
+    outline:none;
+    font-size:15px;
+}
+
+input:focus{
+    border-color:#4f7a5a;
+}
+
+button{
+    background:#4f7a5a;
+    color:white;
+    border:none;
+    padding:12px 18px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#3b6245;
+}
+
+#taskCount{
+    margin-bottom:20px;
+    color:#355e3b;
+    font-size:16px;
+    font-weight:600;
+}
+
+
+ul{
+    list-style:none;
+}
+
+li{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background:#f6f8f3;
+    padding:15px;
+    border-radius:12px;
+    margin-bottom:15px;
+}
+
+.task-text{
+    flex:1;
+    margin-left:15px;
+    font-size:18px;
+    color:#2f3d2e;
+}
+
+.completed{
+    text-decoration:line-through;
+    color:#8a9886;
+}
+
+.actions{
+    display:flex;
+    gap:10px;
+}
+
+.edit-btn{
+    background:#86a786;
+    padding:10px 18px;
+}
+
+.edit-btn:hover{
+    background:#6f936f;
+}
+
+.delete-btn{
+    background:#b85d5d;
+    padding:10px 18px;
+}
+
+.delete-btn:hover{
+    background:#984949;
+}
+
+input[type="checkbox"]{
+    width:22px;
+    height:22px;
+    cursor:pointer;
+}
+
+@media(max-width:600px){
+
+    .container{
+        padding:20px;
+    }
+
+    .input-section{
+        flex-direction:column;
+    }
+
+    button{
+        width:100%;
+    }
+
+}
